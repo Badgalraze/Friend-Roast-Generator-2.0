@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>🔥 Friend Roast Generator 🔥</title>
+
+<style>
+
+body{
+background:#0f172a;
+font-family:Arial,sans-serif;
+color:white;
+text-align:center;
+padding:50px;
+}
+
+.container{
+max-width:700px;
+margin:auto;
+}
+
+h1{
+color:#ff4d4d;
+font-size:50px;
+}
+
+.subtitle{
+color:#cbd5e1;
+margin-bottom:30px;
+}
+
+input{
+width:300px;
+padding:15px;
+border:none;
+border-radius:12px;
+font-size:18px;
+}
+
+button{
+padding:15px 25px;
+border:none;
+border-radius:12px;
+background:#ff4d4d;
+color:white;
+font-size:18px;
+font-weight:bold;
+cursor:pointer;
+margin-left:10px;
+}
+
+button:hover{
+background:#e63946;
+}
+
+#result{
+margin-top:35px;
+padding:25px;
+background:#172554;
+border-radius:15px;
+font-size:20px;
+white-space:pre-line;
+box-shadow:0 0 15px rgba(0,255,120,.2);
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🔥 FRIEND ROAST GENERATOR 🔥</h1>
+
+<p class="subtitle">
+Powered by Completely Unbiased AI™
+</p>
+
+<input
+id="nameInput"
+placeholder="Enter Friend Name">
+
+<button onclick="roastFriend()">
+Analyze Subject
+</button>
+
+<div id="result">
+
+Enter a name to begin analysis.
+
+</div>
+
+</div>
+
+<script>
+
+function roastFriend(){
+
+const result =
+document.getElementById("result");
+
+const name =
+document.getElementById("nameInput")
+.value
+.trim()
+.toLowerCase();
+
+const loading = [
+
+"🔍 Scanning social history...",
+"📊 Gathering embarrassing records...",
+"🧠 Analyzing life choices...",
+"⚠️ Searching group chat evidence...",
+"📱 Reviewing screen addiction...",
+"☕ Measuring caffeine dependency..."
+
+];
+
+result.innerHTML =
+loading[Math.floor(Math.random()*loading.length)];
+
+setTimeout(function(){
+
+// VIP NAMES
+
+if(
+name==="aze" ||
+name==="azel" ||
+name==="zel" ||
+name==="anna" ||
+name==="batang galit"
+){
+
+const compliments = [
+
+"👑 ANALYSIS COMPLETE\n\nSubject appears gorgeous.\n\nRoast cancelled.",
+
+"💎 Beauty score exceeded system limits.",
+
+"🏆 National Treasure Status Confirmed.",
+
+"✨ Main Character Energy Detected.",
+
+"🌸 Subject appears unfairly attractive.",
+
+"💖 Gorgeousness level: Ridiculous.",
+
+"👑 Crown assigned automatically.",
+
+"⭐ Too iconic for criticism.",
+
+"💎 Premium Human Edition.",
+
+"🌷 Everybody else is being compared against this subject.",
+
+"🏅 Achievement Unlocked:\nToo Pretty To Roast.",
+
+"✨ Charm stat maxed out.",
+
+"💖 Subject appears photogenic by default.",
+
+"👑 Scanner has developed favourites.",
+
+"💎 Beauty and intelligence detected simultaneously.",
+
+"🌸 Elegant. Smart. Dangerous.",
+
+"⭐ The algorithm has decided you win.",
+
+"👑 Final Verdict:\nBuilt Different."
+
+];
+
+result.innerHTML =
+compliments[
+Math.floor(Math.random()*compliments.length)
+];
+
+return;
+}
+
+// DAN
+
+if(name==="dan"){
+
+const danRoasts = [
+
+"🚨 DAN REPORT\n\nPatience: 2%\nConfidence: 200%",
+
+"⚠️ Dan was offended before analysis completed.",
+
+"📣 Dan is already typing a response.",
+
+"🤖 Dan disagrees with these findings.",
+
+"🔥 Dan treats every joke like a court case.",
+
+"⚡ Common sense scan failed.",
+
+"📚 Dan could argue with a fortune cookie.",
+
+"🎤 Dan enters group chats like a UFC fighter.",
+
+"📊 Dan believes volume increases accuracy.",
+
+"🧠 Dan has never once said 'fair enough'.",
+
+"🚨 Threat Level:\nMildly Annoyed.",
+
+"⚠️ Rebuttal loading..."
+
+];
+
+result.innerHTML =
+danRoasts[
+Math.floor(Math.random()*danRoasts.length)
+];
+
+return;
+}
+
+// EVERYONE ELSE
+
+const roasts = [
+
+name + " attends meetings that should have been emails.",
+
+name + " has mastered looking busy while doing nothing.",
+
+name + " checks the fridge hoping food respawned.",
+
+name + " treats coffee as life support.",
+
+name + " opens TikTok and loses four hours.",
+
+name + " has 47 browser tabs open right now.",
+
+name + " could turn a two minute task into a weekend project.",
+
+name + " survives entirely on vibes.",
+
+name + " has professional procrastination skills.",
+
+name + " starts side quests before finishing the main quest.",
+
+name + " believes tomorrow is a productivity strategy.",
+
+name + " has enough screenshots to open a museum.",
+
+name + " opens messages and forgets to reply.",
+
+name + " somehow gets tired from resting.",
+
+name + " uses Google for emotional support.",
+
+name + " creates problems then celebrates solving them.",
+
+name + " talks about being productive more than being productive.",
+
+name + " is one inconvenience away from annual leave.",
+
+name + " spends more time updating task status than doing work.",
+
+name + " has survived every problem entirely through luck.",
+
+name + " starts cleaning to avoid actual responsibilities.",
+
+name + " has mastered advanced overthinking.",
+
+name + " could lose their phone while holding it.",
+
+name + " treats deadlines as suggestions.",
+
+name + " spends 20 minutes looking for things that are beside them.",
+
+name + " could miss a reminder reminding them about reminders.",
+
+name + " runs on caffeine and questionable decisions.",
+
+name + " has a black belt in avoiding responsibility.",
+
+name + " still doesn't know why they entered the room.",
+
+name + " would be rich if procrastination paid money."
+
+];
+
+const achievements = [
+
+"🏆 Olympic Procrastinator",
+"💀 Walking Chaos Generator",
+"📱 Full-Time Screen User",
+"☕ Coffee Sponsored Individual",
+"🎭 Drama Consultant",
+"🚀 Surviving On Vibes",
+"📣 Professional Excuse Engineer",
+"🧠 Occasional Genius"
+
+];
+
+const verdicts = [
+
+"Powered by caffeine and hope.",
+
+"Dangerously confident.",
+
+"Professionally unbothered.",
+
+"Needs supervision.",
+
+"Running entirely on vibes.",
+
+"Likely harmless but confusing.",
+
+"Certified menace to productivity.",
+
+"Probably late right now."
+
+];
+
+const roast =
+roasts[Math.floor(Math.random()*roasts.length)];
+
+const achievement =
+achievements[Math.floor(Math.random()*achievements.length)];
+
+const verdict =
+verdicts[Math.floor(Math.random()*verdicts.length)];
+
+const drama =
+Math.floor(Math.random()*100)+1;
+
+const commonSense =
+Math.floor(Math.random()*100)+1;
+
+const rizz =
+Math.floor(Math.random()*100)+1;
+
+result.innerHTML =
+
+"📋 FRIEND ROAST REPORT\n\n" +
+
+"❤️ Rizz: " + rizz + "%\n" +
+
+"🧠 Common Sense: " + commonSense + "%\n" +
+
+"🎭 Drama Level: " + drama + "%\n\n" +
+
+"🏅 Achievement:\n" +
+achievement +
+
+"\n\n📝 Analysis:\n" +
+roast +
+
+"\n\n🏆 Final Verdict:\n" +
+verdict;
+
+},2000);
+
+}
+
+</script>
+
+</body>
+</html>
